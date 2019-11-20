@@ -12,5 +12,5 @@ spring:
           search-paths: /,/{application}/
   security:
     user:
-      name: ${AUTH_NAME}
-      password: ${AUTH_PASSWORD}
+      name: ${CONFIG_AUTH_NAME}
+      password: ${CONFIG_AUTH_PASSWORD}
