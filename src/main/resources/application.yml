@@ -8,3 +8,9 @@ spring:
           uri: https://github.com/ahlinist/tempvs-config-repo
           username: ${GITHUB_USERNAME}
           password: ${GITHUB_PASSWORD}
+          force-pull: true
+          search-paths: /,/{application}/
+  security:
+    user:
+      name: ${AUTH_NAME}
+      password: ${AUTH_PASSWORD}
