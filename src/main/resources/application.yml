@@ -4,6 +4,10 @@ spring:
   cloud:
     config:
       server:
+        native:
+          searchLocations:
+          - file:../tempvs-config-repo/{application}/
+          - file:../tempvs-config-repo/
         git:
           uri: https://github.com/ahlinist/tempvs-config-repo
           username: ${GITHUB_USERNAME}
